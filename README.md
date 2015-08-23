@@ -2,7 +2,7 @@
 
 The package provides [BLAS][1] and [LAPACK][2] to [Rust][3] code using Apple's
 [Accelerate][4] framework. The package simply links the Accelerate framework
-that Apple ships with Mac OS X.
+that Apple ships with Mac OS X. MIT licensed.
 
 ## Where are all the FFI definitions?
 

@@ -5,8 +5,9 @@ authors = ["Andrew Straw <strawman@astraw.com>"]
 license = "MIT"
 repository = "https://github.com/astraw/accelerate-provider"
 homepage = "https://github.com/astraw/accelerate-provider"
-description = "BLAS/LAPACK provider using Apple's accelerate framework"
+description = "provides BLAS and LAPACK using Apple's Accelerate framework"
 build = "build.rs"
+readme = "README.md"
 
 [dev-dependencies]
 libc = "0.1.10"
