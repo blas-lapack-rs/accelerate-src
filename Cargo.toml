@@ -1,6 +1,6 @@
 [package]
 name = "accelerate-provider"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andrew Straw <strawman@astraw.com>"]
 license = "MIT"
 repository = "https://github.com/astraw/accelerate-provider"
