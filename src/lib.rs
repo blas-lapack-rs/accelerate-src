@@ -1,3 +1,15 @@
+/*
+
+This file creates an empty library for a normal build and has some tests for a
+test build.
+
+For a normal build, this file is required so that `extern crate
+accelerate_provider` works in packages that depend on this one. And `extern
+crate accelerate_provider` is necessary so that the linker flag specified in
+build.rs is passed to those packages.
+
+*/
+
 #![allow(non_camel_case_types)]
 
 #[cfg(test)]
