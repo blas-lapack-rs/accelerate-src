@@ -16,15 +16,13 @@ extern crate libc;
 #[allow(non_camel_case_types)]
 #[cfg(test)]
 mod tests {
-    use libc::{c_float, c_long, c_ulong};
-
-    type vDSP_Length = c_ulong;
-    type vDSP_Stride = c_long;
+    use libc::{c_float, size_t, ptrdiff_t};
 
     extern "C" {
         // Vector-scalar multiply.
-        fn vDSP_vsmul(__A: *const c_float, __IA: vDSP_Stride, __B: *const c_float,
-                      __C: *mut c_float, __IC: vDSP_Stride, __N: vDSP_Length);
+        fn vDSP_vsmul(vDSP_input1: *const c_float, vDSP_stride1: ptrdiff_t,
+                      vDSP_input2: *const c_float, vDSP_result: *mut c_float,
+                      vDSP_strideResult: ptrdiff_t, vDSP_size: size_t);
     }
 
     fn approx_eq(x: c_float, y: c_float) -> bool {
