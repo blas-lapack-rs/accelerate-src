@@ -1,13 +1,13 @@
 [package]
 name = "accelerate-provider"
-version = "0.1.2"
+version = "0.2.0"
+license = "Apache-2.0/MIT"
 authors = ["Andrew Straw <strawman@astraw.com>"]
-license = "MIT"
-repository = "https://github.com/strawlab/accelerate-provider"
+description = "The package provides BLAS and LAPACK using Apple’s Accelerate framework."
 homepage = "https://github.com/strawlab/accelerate-provider"
-description = "provides BLAS and LAPACK using Apple's Accelerate framework"
-build = "build.rs"
+repository = "https://github.com/strawlab/accelerate-provider"
 readme = "README.md"
+build = "build.rs"
 
 [dev-dependencies]
 libc = "0.2"
