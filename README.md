@@ -1,23 +1,32 @@
-# Accelerate Provider
+# Accelerate Provider [![Version][version-img]][version-url] [![Status][status-img]][status-url]
 
-[![Build Status](https://travis-ci.org/strawlab/accelerate-provider.svg)](https://travis-ci.org/strawlab/accelerate-provider)
-
-This package links the Accelerate framework that Apple ships with Mac OS X.
-Therefore, it provides functions from [BLAS][1] and [LAPACK][2], amongst others,
-to [Rust][3]. MIT licensed.
+The package provides [BLAS][1] and [LAPACK][2] using Apple’s [Accelerate
+framework][3]. The framework is shipped with Mac OS X, and the package only
+links to it (without any additional compilation). Note that any other functions
+exported by the framework are implicitly made available by the package.
 
 ## Where are all the FFI definitions?
 
-This package only links to an implementation of BLAS and LAPACK, amongst others.
-Bindings are available in [blas-sys][5] and [lapack-sys][6], and wrappers are
-available in [blas][7] and [lapack][8].
+This package provides only an implementation of BLAS and LAPACK. Bindings are
+available in [blas-sys][4] and [lapack-sys][5], and wrappers are available in
+[blas][6] and [lapack][7].
+
+## Contribution
+
+Your contribution is highly appreciated. Do not hesitate to open an issue or a
+pull request. Note that any contribution submitted for inclusion in the project
+will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 
 [1]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
 [2]: https://en.wikipedia.org/wiki/LAPACK
-[3]: https://www.rust-lang.org/
-[4]: https://developer.apple.com/library/mac/documentation/Accelerate/Reference/AccelerateFWRef/
+[3]: https://developer.apple.com/library/mac/documentation/Accelerate/Reference/AccelerateFWRef
 
-[5]: https://github.com/stainless-steel/blas-sys
-[6]: https://github.com/stainless-steel/lapack-sys
-[7]: https://github.com/stainless-steel/blas
-[8]: https://github.com/stainless-steel/lapack
+[4]: https://github.com/stainless-steel/blas-sys
+[5]: https://github.com/stainless-steel/lapack-sys
+[6]: https://github.com/stainless-steel/blas
+[7]: https://github.com/stainless-steel/lapack
+
+[version-img]: https://img.shields.io/crates/v/accelerate-provider.svg
+[version-url]: https://crates.io/crates/accelerate-provider
+[status-img]: https://travis-ci.org/strawlab/accelerate-provider.svg?branch=master
+[status-url]: https://travis-ci.org/strawlab/accelerate-provider
