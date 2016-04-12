@@ -1,6 +1,6 @@
 [package]
 name = "accelerate-provider"
-version = "0.2.0"
+version = "0.2.1"
 license = "Apache-2.0/MIT"
 authors = ["Andrew Straw <strawman@astraw.com>"]
 description = "The package provides BLAS and LAPACK using Apple’s Accelerate framework."
