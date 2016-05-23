@@ -1,9 +1,9 @@
 #![allow(non_camel_case_types)]
 
-extern crate accelerate_provider;
+extern crate accelerate_src;
 extern crate libc;
 
-use libc::{c_float, size_t, ptrdiff_t};
+use libc::{c_float, ptrdiff_t, size_t};
 
 extern "C" {
     fn vDSP_vsmul(vDSP_input1: *const c_float, vDSP_stride1: ptrdiff_t,

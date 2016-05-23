@@ -1,4 +1,4 @@
-# Accelerate Provider [![Version][version-img]][version-url] [![Status][status-img]][status-url]
+# accelerate-src [![Version][version-img]][version-url] [![Status][status-img]][status-url]
 
 The package provides [BLAS][1] and [LAPACK][2] using Apple’s [Accelerate
 framework][3]. The framework is shipped with Mac OS X, and the package only
@@ -26,7 +26,7 @@ will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 [6]: https://github.com/stainless-steel/blas
 [7]: https://github.com/stainless-steel/lapack
 
-[version-img]: https://img.shields.io/crates/v/accelerate-provider.svg
-[version-url]: https://crates.io/crates/accelerate-provider
-[status-img]: https://travis-ci.org/strawlab/accelerate-provider.svg?branch=master
-[status-url]: https://travis-ci.org/strawlab/accelerate-provider
+[status-img]: https://travis-ci.org/strawlab/accelerate-src.svg?branch=master
+[status-url]: https://travis-ci.org/strawlab/accelerate-src
+[version-img]: https://img.shields.io/crates/v/accelerate-src.svg
+[version-url]: https://crates.io/crates/accelerate-src
