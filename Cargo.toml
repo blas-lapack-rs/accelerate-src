@@ -1,11 +1,13 @@
 [package]
 name = "accelerate-src"
-version = "0.3.0"
+version = "0.3.1"
 license = "Apache-2.0/MIT"
 authors = ["Andrew Straw <strawman@astraw.com>"]
 description = "The package provides BLAS and LAPACK using Apple’s Accelerate framework."
 homepage = "https://github.com/strawlab/accelerate-src"
 repository = "https://github.com/strawlab/accelerate-src"
+categories = ["science"]
+keywords = ["linear-algebra"]
 readme = "README.md"
 build = "build.rs"
 links = "Accelerate.framework"
