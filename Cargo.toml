@@ -7,9 +7,9 @@ description = "The package provides an implementation of BLAS and LAPACK via the
 documentation = "https://docs.rs/accelerate-src"
 homepage = "https://github.com/blas-lapack-rs/accelerate-src"
 repository = "https://github.com/blas-lapack-rs/accelerate-src"
+readme = "README.md"
 categories = ["science"]
 keywords = ["linear-algebra"]
-readme = "README.md"
 build = "build.rs"
 links = "Accelerate.framework"
 
