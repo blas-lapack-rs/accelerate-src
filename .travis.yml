@@ -1,4 +1,5 @@
 language: rust
+
 os: osx
 
 rust:
@@ -6,6 +7,5 @@ rust:
   - beta
   - nightly
 
-matrix:
-  allow_failures:
-    - rust: nightly
+notifications:
+  email: false
