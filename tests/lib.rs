@@ -6,9 +6,14 @@ extern crate libc;
 use libc::{c_float, ptrdiff_t, size_t};
 
 extern "C" {
-    fn vDSP_vsmul(vDSP_input1: *const c_float, vDSP_stride1: ptrdiff_t,
-                  vDSP_input2: *const c_float, vDSP_result: *mut c_float,
-                  vDSP_strideResult: ptrdiff_t, vDSP_size: size_t);
+    fn vDSP_vsmul(
+        vDSP_input1: *const c_float,
+        vDSP_stride1: ptrdiff_t,
+        vDSP_input2: *const c_float,
+        vDSP_result: *mut c_float,
+        vDSP_strideResult: ptrdiff_t,
+        vDSP_size: size_t,
+    );
 }
 
 fn approx_eq(x: c_float, y: c_float) -> bool {
