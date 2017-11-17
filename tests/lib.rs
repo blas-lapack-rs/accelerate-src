@@ -16,11 +16,6 @@ extern "C" {
     );
 }
 
-fn approx_eq(x: c_float, y: c_float) -> bool {
-    let eps = 1e-10;
-    (x - y).abs() < (eps * y).abs()
-}
-
 #[test]
 fn link() {
     let input = [1.0, 2.0, 3.0];
@@ -29,7 +24,12 @@ fn link() {
     unsafe {
         vDSP_vsmul(input.as_ptr(), 1, &factor, output.as_mut_ptr(), 1, 3);
     }
-    assert!(approx_eq(output[0], 5.0));
-    assert!(approx_eq(output[1], 10.0));
-    assert!(approx_eq(output[2], 15.0));
+    assert!(close(output[0], 5.0));
+    assert!(close(output[1], 10.0));
+    assert!(close(output[2], 15.0));
+}
+
+fn close(x: c_float, y: c_float) -> bool {
+    const EPS: c_float = 1e-10;
+    (x - y).abs() < (EPS * y).abs()
 }
