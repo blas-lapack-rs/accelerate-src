@@ -1,6 +1,6 @@
 [package]
 name = "accelerate-src"
-version = "0.3.1"
+version = "0.3.2"
 license = "Apache-2.0/MIT"
 authors = ["Andrew Straw <strawman@astraw.com>"]
 description = "The package provides an implementation of BLAS and LAPACK via the Accelerate framework."
