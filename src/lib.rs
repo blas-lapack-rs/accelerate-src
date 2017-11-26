@@ -1,4 +1,4 @@
-//! Implementation of [BLAS] and [LAPACK] via the [Accelerate] framework.
+//! Source of [BLAS] and [LAPACK] via the [Accelerate] framework.
 //!
 //! The usage of the package is explained [here][usage].
 //!
